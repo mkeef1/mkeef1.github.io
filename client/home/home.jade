@@ -1,2 +1,18 @@
 p {{title}}
-p Home
+
+.row
+  .col-xs-6
+    br
+    img(ng-src='assets/person.png')
+  .col-xs-6
+    h2 Resume
+    p stuff
+    p stuff
+    p stuff
+
+.row
+  .col-xs-12
+    h3 Projects
+    .panel#projects(ng-repeat='p in projects') {{p}}
+  
+
