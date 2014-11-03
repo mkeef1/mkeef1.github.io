@@ -12,7 +12,24 @@ p {{title}}
 
 .row
   .col-xs-12
-    h3 Projects
-    .panel#projects(ng-repeat='p in projects') {{p}}
+    h3 Angular
+    .panel#projects(ng-repeat='a in angular') {{a}}
+  
+.row
+  .col-xs-12
+    h3 Mobile
+    .panel#projects(ng-repeat='m in mobile') {{m}}
+
+.row
+  .col-xs-12
+    h3 Games
+    .panel#projects(ng-repeat='g in games') {{g}}
+
+.row
+  .col-xs-12
+    h3 Capstone
+    .panel#projects(ng-repeat='c in capstone') {{c}}
+  
+  
   
 
