@@ -1,2 +1,1 @@
-davidboling.github.io
-=====================
+front-end-template
