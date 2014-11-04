@@ -1,0 +1,28 @@
+.navbar.navbar-default(role='navigation')
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle.collapsed(data-toggle='collapse', data-target='#bs-navbar-collapse')
+        span.sr-only Toggle
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href='/') Portfolio
+
+    .collapse.navbar-collapse#bs-navbar-collapse
+      .nav.navbar-nav.navbar-right
+        li: a(href='/#/about', class='fa fa-home') About
+        li: a(href='/#/register') Projects
+
+{{title}}
+
+
+.row
+  .col-xs-6
+    br
+    img(ng-src='assets/person.png')
+  .col-xs-6
+    h2 Resume
+    p stuff
+    p stuff
+    p stuff
+a(href='https://medium.com/@mhkeef') My Development Blog

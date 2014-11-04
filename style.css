@@ -8,4 +8,6 @@ img {
 #projects {
   display: inline-block;
   margin: 20px;
+  border-radius: 10px;
+  padding: 5px;
 }

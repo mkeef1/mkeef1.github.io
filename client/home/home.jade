@@ -1,16 +1,3 @@
-p {{title}}
-
-.row
-  .col-xs-6
-    br
-    img(ng-src='assets/person.png')
-  .col-xs-6
-    h2 Resume
-    p stuff
-    p stuff
-    p stuff
-a(href='https://medium.com/@mhkeef') My Development Blog
-
 .navbar.navbar-default(role='navigation')
   .container-fluid
     .navbar-header
@@ -20,17 +7,14 @@ a(href='https://medium.com/@mhkeef') My Development Blog
         span.icon-bar
         span.icon-bar
       a.navbar-brand(href='/') Portfolio
+      a.navbar-brand(href='/#/about', class='fa fa-home') About
+      a.navbar-brand(href='/#/register') Projects
 
     .collapse.navbar-collapse#bs-navbar-collapse
-      .nav.navbar-nav.navbar-right
-        li: a(href='/#/', class='fa fa-home') &nbsp Home
-        li: a(href='/#/register') Register
-        li: a(href='/#/login') Login
-      ul.nav.navbar-nav.navbar-right(ng-show='email')
-        li: a(href='/#/profile', class='glyphicon glyphicon-user') &nbsp Profile
-        li: a(href='/#/dashboard', class='fa fa-bar-chart') &nbsp Dashboard
-        li: a(href='/#/logout', class='fa fa-times') &nbsp Logout
-        li: a(href='') {{email}}
+      .nav.navbar-nav
+{{title}}
+
+
 
 
 .row
@@ -45,8 +29,12 @@ a(href='https://medium.com/@mhkeef') My Development Blog
 
 .row
   .col-xs-12
-    h3 Games
-    .panel#projects(ng-repeat='g in games') {{g}}
+    h2 Games
+    .panel#projects
+      h3 Flappy Bird
+      br
+      a(href='http://mkeef1.github.io/flappy-bird') Play the Game &nbsp &nbsp
+      a(href='https://github.com/mkeef1/flappy-bird') View on Github
 
 .row
   .col-xs-12
