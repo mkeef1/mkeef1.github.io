@@ -29,7 +29,7 @@ header
     .intro-text
       .intro-lead-in Matt Keef
       .intro-heading Web Developer
-      a.page-scroll.btn.btn-xl(href='#services') Tell Me More
+      a.page-scroll.btn.btn-xl(href='', ng-click='scrollTo("portfolio")') See My Projects
 // Services Section
 section#services
   .container
@@ -65,28 +65,29 @@ section#portfolio.bg-light-gray
     .row
       .col-lg-12.text-center
         h2.section-heading Portfolio
-        h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+        br
+        h2.section-subheading.text-muted Games
     .row
       .col-md-4.col-sm-6.portfolio-item
-        a.portfolio-link(data-toggle='modal', href='#portfolioModal1')
+        a.portfolio-link(data-toggle='modal', href='http://mkeef1.com/flappy-bird')
           .portfolio-hover
             .portfolio-hover-content
-              i.fa.fa-plus.fa-3x
+              i.fa.fa-plus.fa-3x 
+              h4 Play
           img.img-responsive(alt='', src='assets/img/portfolio/roundicons.png')
         .portfolio-caption
           h4 Flappy Bird
-          p.text-muted: a(href='http://mkeef1.com/flappy-bird') Play The Game
           p.text-muted: a(href='http://github.com/mkeef1/flappy-bird') See On Github
       .col-md-4.col-sm-6.portfolio-item
-        a.portfolio-link(data-toggle='modal', href='#portfolioModal2')
+        a.portfolio-link(data-toggle='modal', href='http://helloween.mkeef1.com')
           .portfolio-hover
             .portfolio-hover-content
               i.fa.fa-plus.fa-3x
+              h4 Play
           img.img-responsive(alt='', src='assets/img/portfolio/startup-framework.png')
         .portfolio-caption
-          h4 Startup Framework
-          p.text-muted Website Design
-          p.text-muted Website Design
+          h4 Helloween
+          p.text-muted: a(href='http://github.com/mkeef1/helloween') See On Github
       .col-md-4.col-sm-6.portfolio-item
         a.portfolio-link(data-toggle='modal', href='#portfolioModal3')
           .portfolio-hover
