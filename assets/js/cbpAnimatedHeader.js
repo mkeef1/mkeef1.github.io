@@ -10,10 +10,16 @@
  */
 var cbpAnimatedHeader = (function() {
 
-	var docElem = document.documentElement,
-		header = document.querySelector( '.navbar-default' ),
-		didScroll = false,
-		changeHeaderOn = 300;
+	var docElem, header, didScroll, changeHeaderOn;
+
+	var timer = setTimeout(function(){
+		  docElem = document.documentElement,
+			header = document.querySelector( '.navbar-default' ),
+			didScroll = false,
+			changeHeaderOn = 300;
+			clearTimeout(timer);
+	}, 500);
+
 
 	function init() {
 		window.addEventListener( 'scroll', function( event ) {
