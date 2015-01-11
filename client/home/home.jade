@@ -18,9 +18,7 @@ nav.navbar.navbar-default.navbar-fixed-top
         li
           a.page-scroll(href='', ng-click='scrollTo("portfolio")') Portfolio
         li
-          a.page-scroll(href='', ng-click='scrollTo("about")') About
-        li
-          a.page-scroll(href='', ng-click='scrollTo("contact")') Contact
+          a.page-scroll(href='', ng-click='scrollTo("about")') Resume
     // /.navbar-collapse
   // /.container-fluid
 // Header
@@ -31,34 +29,6 @@ header
       .intro-heading Web Developer
       a.page-scroll.btn.btn-xl(href='', ng-click='scrollTo("portfolio")') See My Projects
 // Services Section
-section#services
-  .container
-    .row
-      .col-lg-12.text-center
-        h2.section-heading Services
-        h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-    .row.text-center
-      .col-md-4
-        span.fa-stack.fa-4x
-          i.fa.fa-circle.fa-stack-2x.text-primary
-          i.fa.fa-shopping-cart.fa-stack-1x.fa-inverse
-        h4.service-heading E-Commerce
-        p.text-muted
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
-      .col-md-4
-        span.fa-stack.fa-4x
-          i.fa.fa-circle.fa-stack-2x.text-primary
-          i.fa.fa-laptop.fa-stack-1x.fa-inverse
-        h4.service-heading Responsive Design
-        p.text-muted
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
-      .col-md-4
-        span.fa-stack.fa-4x
-          i.fa.fa-circle.fa-stack-2x.text-primary
-          i.fa.fa-lock.fa-stack-1x.fa-inverse
-        h4.service-heading Web Security
-        p.text-muted
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
 // Portfolio Grid Section
 section#portfolio.bg-light-gray
   .container
@@ -188,216 +158,44 @@ section#portfolio.bg-light-gray
         h2.section-subheading.text-muted Node Apps
         br
       .col-md-4.col-sm-6.portfolio-item
-        a.portfolio-link(data-toggle='modal', href='http://mymise.mkeef1.com')
+        a.portfolio-link(data-toggle='modal', href='http://trailerlove.mkeef1.com')
           .portfolio-hover
             .portfolio-hover-content
               i.fa.fa-desktop.fa-3x
               h4 View
-          img.img-responsive(alt='', src='assets/img/mymise.png')
+              p(style='padding: 5px; color: black') Find that specail someone in the trailer park!  Maybe send them a message or buy them a gift.
+          img.img-responsive(alt='', src='assets/img/trailer.png')
         .portfolio-caption
-          h3 My Mise
-          p.text-muted: a(href='http://github.com/mkeef1/my-mise') View On Github
-      .col-md-4.col-sm-6.portfolio-item
-        a.portfolio-link(data-toggle='modal', href='http://mymise.mkeef1.com')
-          .portfolio-hover
-            .portfolio-hover-content
-              i.fa.fa-desktop.fa-3x
-              h4 View
-          img.img-responsive(alt='', src='assets/img/mymise.png')
-        .portfolio-caption
-          h3 My Mise
-          p.text-muted: a(href='http://github.com/mkeef1/my-mise') View On Github
-      .col-md-4.col-sm-6.portfolio-item
-        a.portfolio-link(data-toggle='modal', href='http://mymise.mkeef1.com')
-          .portfolio-hover
-            .portfolio-hover-content
-              i.fa.fa-desktop.fa-3x
-              h4 View
-          img.img-responsive(alt='', src='assets/img/mymise.png')
-        .portfolio-caption
-          h3 My Mise
-          p.text-muted: a(href='http://github.com/mkeef1/my-mise') View On Github
+          h3(style='margin-top: 0px') Trailer Love
+          p.text-muted: a(href='http://github.com/mkeef1/trailer-love') View On Github
+          h5 Teammates
+          ul.list-inline
+            li
+              a(href='http://github.com/zoeames') Zoe Ames
+            li
+              a(href='http://github.com/MikeBBarreiro') Michael Barreiro
+            li
+              a(href='http://github.com/JoyP') Joy Pratt
+            li
+              a(href='http://github.com/tdsjr82') Dennis Stanley
+            li
+              a(href='http://github.com/marksupalla') Mark Supalla
 // About Section
 section#about
   .container
     .row
       .col-lg-12.text-center
-        h2.section-heading About
-        h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+        h2.section-heading Resume
     .row
-      .col-lg-12
-        ul.timeline
-          li
-            .timeline-image
-              img.img-circle.img-responsive(alt='', src='assets/img/about/1.jpg')
-            .timeline-panel
-              .timeline-heading
-                h4 2009-2011
-                h4.subheading Our Humble Beginnings
-              .timeline-body
-                p.text-muted
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-          li.timeline-inverted
-            .timeline-image
-              img.img-circle.img-responsive(alt='', src='assets/img/about/2.jpg')
-            .timeline-panel
-              .timeline-heading
-                h4 March 2011
-                h4.subheading An Agency is Born
-              .timeline-body
-                p.text-muted
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-          li
-            .timeline-image
-              img.img-circle.img-responsive(alt='', src='assets/img/about/3.jpg')
-            .timeline-panel
-              .timeline-heading
-                h4 December 2012
-                h4.subheading Transition to Full Service
-              .timeline-body
-                p.text-muted
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-          li.timeline-inverted
-            .timeline-image
-              img.img-circle.img-responsive(alt='', src='assets/img/about/4.jpg')
-            .timeline-panel
-              .timeline-heading
-                h4 July 2014
-                h4.subheading Phase Two Expansion
-              .timeline-body
-                p.text-muted
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-          li.timeline-inverted
-            .timeline-image
-              h4
-                | Be Part
-                br
-                | Of Our
-                br
-                | Story!
+      .col-lg-12.img-centered
+        img.img-responsive(style='margin-left: auto; margin-right: auto', src='assets/img/Resume.png')
 // Team Section
-section#team.bg-light-gray
-  .container
-    .row
-      .col-lg-12.text-center
-        h2.section-heading Our Amazing Team
-        h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-    .row
-      .col-sm-4
-        .team-member
-          img.img-responsive.img-circle(alt='', src='assets/img/team/1.jpg')
-          h4 Kay Garland
-          p.text-muted Lead Designer
-          ul.list-inline.social-buttons
-            li
-              a(href='#')
-                i.fa.fa-twitter
-            li
-              a(href='#')
-                i.fa.fa-facebook
-            li
-              a(href='#')
-                i.fa.fa-linkedin
-      .col-sm-4
-        .team-member
-          img.img-responsive.img-circle(alt='', src='assets/img/team/2.jpg')
-          h4 Larry Parker
-          p.text-muted Lead Marketer
-          ul.list-inline.social-buttons
-            li
-              a(href='#')
-                i.fa.fa-twitter
-            li
-              a(href='#')
-                i.fa.fa-facebook
-            li
-              a(href='#')
-                i.fa.fa-linkedin
-      .col-sm-4
-        .team-member
-          img.img-responsive.img-circle(alt='', src='assets/img/team/3.jpg')
-          h4 Diana Pertersen
-          p.text-muted Lead Developer
-          ul.list-inline.social-buttons
-            li
-              a(href='#')
-                i.fa.fa-twitter
-            li
-              a(href='#')
-                i.fa.fa-facebook
-            li
-              a(href='#')
-                i.fa.fa-linkedin
-    .row
-      .col-lg-8.col-lg-offset-2.text-center
-        p.large.text-muted
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
 // Clients Aside
-aside.clients
-  .container
-    .row
-      .col-md-3.col-sm-6
-        a(href='#')
-          img.img-responsive.img-centered(alt='', src='assets/img/logos/envato.jpg')
-      .col-md-3.col-sm-6
-        a(href='#')
-          img.img-responsive.img-centered(alt='', src='assets/img/logos/designmodo.jpg')
-      .col-md-3.col-sm-6
-        a(href='#')
-          img.img-responsive.img-centered(alt='', src='assets/img/logos/themeforest.jpg')
-      .col-md-3.col-sm-6
-        a(href='#')
-          img.img-responsive.img-centered(alt='', src='assets/img/logos/creative-market.jpg')
-section#contact
-  .container
-    .row
-      .col-lg-12.text-center
-        h2.section-heading Contact Us
-        h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-    .row
-      .col-lg-12
-        form#contactForm(novalidate='', name='sentMessage')
-          .row
-            .col-md-6
-              .form-group
-                input#name.form-control(type='text', data-validation-required-message='Please enter your name.', required='', placeholder='Your Name *')
-                p.help-block.text-danger
-              .form-group
-                input#email.form-control(type='email', data-validation-required-message='Please enter your email address.', required='', placeholder='Your Email *')
-                p.help-block.text-danger
-              .form-group
-                input#phone.form-control(type='tel', data-validation-required-message='Please enter your phone number.', required='', placeholder='Your Phone *')
-                p.help-block.text-danger
-            .col-md-6
-              .form-group
-                textarea#message.form-control(data-validation-required-message='Please enter a message.', required='', placeholder='Your Message *')
-                p.help-block.text-danger
-            .clearfix
-            .col-lg-12.text-center
-              #success
-              button.btn.btn-xl(type='submit') Send Message
 footer
   .container
     .row
       .col-md-4
-        span.copyright Copyright © Your Website 2014
-      .col-md-4
-        ul.list-inline.social-buttons
-          li
-            a(href='#')
-              i.fa.fa-twitter
-          li
-            a(href='#')
-              i.fa.fa-facebook
-          li
-            a(href='#')
-              i.fa.fa-linkedin
-      .col-md-4
-        ul.list-inline.quicklinks
-          li
-            a(href='#') Privacy Policy
-          li
-            a(href='#') Terms of Use
+        span.copyright Copyright © mkeef1.com 2015
 // Portfolio Modals
 // Use the modals below to showcase details about your portfolio projects!
 // Portfolio Modal 1
@@ -553,7 +351,7 @@ footer
             button.btn.btn-primary(data-dismiss='modal', type='button')
               i.fa.fa-times
               | Close Project
-              
-  
-  
+
+
+
 
