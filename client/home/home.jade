@@ -26,7 +26,7 @@ header
   .container
     .intro-text
       .intro-lead-in Matt Keef
-      .intro-heading Web Developer
+      .intro-heading Game / Web Developer
       a.page-scroll.btn.btn-xl(href='', ng-click='scrollTo("portfolio")') See My Projects
 // Services Section
 // Portfolio Grid Section
@@ -35,6 +35,23 @@ section#portfolio.bg-light-gray
     .row
       .col-lg-12.text-center
         h2.section-heading Portfolio
+        br
+        h2.section-subheading.text-muted Capstone
+        br
+    .row
+      .col-md-12.col-sm-6.portfolio-item
+        a.portfolio-link(href='http://lordquas.mkeef1.com')
+          .portfolio-hover
+            .portfolio-hover-content
+              i.fa.fa-gamepad.fa-3x
+              h4 Play
+              p(style='padding: 5px; color: black') Help Lord Quas collect records. Arrow Keys to move. Spacebar on boss level throws brick.
+          img.img-responsive(alt='', src='assets/img/gameShot2.png')
+        .portfolio-caption(style='padding-bottom: 7px')
+          h3(style='margin-top: 0px') The Adventures of Lord Quas
+          p.text-muted: a(href='http://github.com/mkeef1/capstone') View On Github
+    .row
+      .col-lg-12.text-center
         br
         h2.section-subheading.text-muted Games
         br
@@ -188,7 +205,7 @@ section#about
         h2.section-heading Resume
     .row
       .col-lg-12.img-centered
-        img.img-responsive(style='margin-left: auto; margin-right: auto', src='assets/img/Resume.png')
+        img.img-responsive(style='margin-left: auto; margin-right: auto', src='assets/img/GameResume.png')
 // Team Section
 // Clients Aside
 footer
